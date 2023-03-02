@@ -37,7 +37,11 @@ def feedbackk(request):
 
         return {'sentiment': a}
     
-    a = analyse(field1)
-    print(a)
-    context =  {'sentiment': a}
+    sentiment1 = analyse(field1)
+    sentiment2 = analyse(field2)
+    sentiment3 = analyse(field3)
+    sentiment4 = analyse(field4)
+    sentiment5 = analyse(field5)
+    print(sentiment1)
+    context =  {'sentiment1': sentiment1, 'sentiment2': sentiment2, 'sentiment3': sentiment3, 'sentiment4': sentiment4, 'sentiment5': sentiment5}
     return render(request, 'feedback.html', context)
