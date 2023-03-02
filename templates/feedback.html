@@ -1,16 +1,35 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css\styles.css' %}"> 
     <title>Sentiment Analysis</title>
 </head>
 <body>
-    {{sentiment1}}
-    {{sentiment2}}
-    {{sentiment3}}
-    {{sentiment4}}
-    {{sentiment5}}
+    <div style = "margin:20px;">
+        <h2>Sentiment Analysis Results of the fields are given below:</h2>
+        <div class="user-box">
+            <label>Sentiment Analysis of field <b>Education system</b> is {{sentiment1}}.</label>
+        </div>
+        <br><br>
+        <div class="user-box">
+            <label>Sentiment Analysis of field <b>Crime management </b>is {{sentiment2}}.</label>
+        </div>
+        <br><br>
+        <div class="user-box">
+            <label>Sentiment Analysis of field <b>Transport system </b> is {{sentiment3}}.</label>
+        </div>
+        <br><br>
+        <div class="user-box">
+            <label>Sentiment Analysis of field <b>Hygiene</b> is {{sentiment4}}.</label>
+        </div>
+        <br><br>
+        <div class="user-box">
+            <label>Sentiment Analysis of field <b>Health </b> is {{sentiment5}}.</label>
+        </div>
+    </div>
 </body>
 </html>
