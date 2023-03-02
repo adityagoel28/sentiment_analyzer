@@ -29,6 +29,7 @@ def feedbackk(request):
             sent = 'very positive'
 
         prob = result[0]['score']
+        prob = round(prob, 2)
         a =  sent + " with probabilty "+ str(prob)
         return str(a)
     

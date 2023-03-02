@@ -9,10 +9,15 @@
     <title>Sentiment Analysis</title>
 </head>
 <body>
-    <div style = "margin:20px;">
+    <div style = "margin:20px; text-align: center;">
         <h2>Sentiment Analysis Results of the fields are given below:</h2>
+        <br>
         <div class="user-box">
-            <label>Sentiment Analysis of field <b>Education system</b> is {{sentiment1}}.</label>
+            <label>Sentiment Analysis of field <b>Education system</b> is 
+                {% comment %} <p class="alert alert-danger" role="alert"> {% endcomment %}
+                    {{sentiment1}}.
+                {% comment %} </p> {% endcomment %}
+            </label>
         </div>
         <br><br>
         <div class="user-box">
